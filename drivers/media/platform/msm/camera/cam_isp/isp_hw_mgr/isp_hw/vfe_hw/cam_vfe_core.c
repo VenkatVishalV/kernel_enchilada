@@ -387,7 +387,11 @@ int cam_vfe_reset(void *hw_priv, void *reset_core_args, uint32_t arg_size)
 
 	reinit_completion(&vfe_hw->hw_complete);
 
+<<<<<<< HEAD
 	CAM_INFO(CAM_ISP, "calling RESET on vfe %d", soc_info->index);
+=======
+	CAM_DBG(CAM_ISP, "calling RESET on vfe %d", soc_info->index);
+>>>>>>> 8b0520b5902a22beaa94e63046a4247abcf4d3da
 	core_info->vfe_top->hw_ops.reset(core_info->vfe_top->top_priv,
 		reset_core_args, arg_size);
 	CAM_DBG(CAM_ISP, "waiting for vfe reset complete");

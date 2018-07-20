@@ -119,6 +119,15 @@ void cam_hfi_deinit(void __iomem *icp_base);
  * @lvl: FW debug message level
  */
 int hfi_set_debug_level(u64 a5_dbg_type, uint32_t lvl);
+<<<<<<< HEAD
+=======
+
+/**
+ * hfi_set_fw_dump_level() - set firmware dump level
+ * @lvl: level of firmware dump level
+ */
+int hfi_set_fw_dump_level(uint32_t lvl);
+>>>>>>> 8b0520b5902a22beaa94e63046a4247abcf4d3da
 
 /**
  * hfi_enable_ipe_bps_pc() - Enable interframe pc
